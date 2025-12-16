@@ -7,9 +7,8 @@
  * but provides the code you requested for "including MongoDB".
  */
 
-// import mongoose from 'mongoose'; // Uncomment in Node.js environment
+ import mongoose from 'mongoose'; // Uncomment in Node.js environment
 
-/*
 const UserSchema = new mongoose.Schema({
   id: { type: String, required: true, unique: true },
   name: { type: String, required: true },
@@ -40,4 +39,4 @@ export const NoteModel = mongoose.model('Note', NoteSchema);
 export const SubjectModel = mongoose.model('Subject', SubjectSchema);
 */
 
-export const MONGODB_URI = "mongodb+srv://<username>:<password>@cluster0.mongodb.net/edunote?retryWrites=true&w=majority";
+export const MONGODB_URI = "MONGO_URI=mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/edunote?retryWrites=true&w=majority";
