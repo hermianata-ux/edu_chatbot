@@ -37,6 +37,4 @@ const SubjectSchema = new mongoose.Schema({
 export const UserModel = mongoose.model('User', UserSchema);
 export const NoteModel = mongoose.model('Note', NoteSchema);
 export const SubjectModel = mongoose.model('Subject', SubjectSchema);
-*/
 
-export const MONGODB_URI = "mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/edunote?retryWrites=true&w=majority";
