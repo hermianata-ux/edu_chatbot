@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 const PORT = 5000;
-require("dotenv").config();
+
 // Middleware
 app.use(cors());
 app.use(express.json({ limit: '50mb' })); // Increased limit for file uploads
