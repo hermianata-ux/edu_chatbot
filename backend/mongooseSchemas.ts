@@ -39,4 +39,4 @@ export const NoteModel = mongoose.model('Note', NoteSchema);
 export const SubjectModel = mongoose.model('Subject', SubjectSchema);
 */
 
-export const MONGODB_URI = "MONGO_URI=mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/edunote?retryWrites=true&w=majority";
+export const MONGODB_URI = "mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/edunote?retryWrites=true&w=majority";
