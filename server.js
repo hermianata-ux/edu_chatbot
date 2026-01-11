@@ -4,7 +4,7 @@ import cors from 'cors';
 
 const app = express();
 const PORT = 5000;
-
+require("dotenv").config();
 // Middleware
 app.use(cors());
 app.use(express.json({ limit: '50mb' })); // Increased limit for file uploads
@@ -12,7 +12,8 @@ app.use(express.json({ limit: '50mb' })); // Increased limit for file uploads
 // --- MongoDB Connection ---
 // Credentials taken from your provided screenshot.
 // NOTE: Ensure the cluster address (cluster0.mongodb.net) matches your actual Atlas cluster address.
-const MONGO_URI = "mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.mongodb.net/edunote?retryWrites=true&w=majority";
+MONGO_URI="mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/edunote?retryWrites=true&w=majority";
+
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ Connected to MongoDB Atlas'))
