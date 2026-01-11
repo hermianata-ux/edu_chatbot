@@ -14,7 +14,7 @@ app.use(express.json({ limit: '50mb' })); // Increased limit for file uploads
 // Credentials taken from your provided screenshot.
 // NOTE: Ensure the cluster address (cluster0.mongodb.net) matches your actual Atlas cluster address.
 
-const MONGO_URI = "mongodb+srv://hermianata_db_user:kbT6MGogujD7tfR7@cluster0.fuksfb8.mongodb.net/?retryWrites=true&w=majority&appName=EduNoteBot";
+const uri = "mongodb+srv://hermianata_db_user:<db_password>@cluster0.fuksfb8.mongodb.net/?appName=Cluster0";
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ Connected to MongoDB Atlas'))
